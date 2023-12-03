@@ -12,7 +12,7 @@ namespace TgBotLab
     {
         static void Main(string[] args)
         {
-            var client = new TelegramBotClient("6572657698:AAGHh16WvARCXJi5UiPdzkuZB01dDdJxUR4");
+            var client = new TelegramBotClient("6789825477:AAFNCkasmhycMWZ-lq8iV9iMaWG3jM84Gsg");
             client.StartReceiving(Update, Error);
             Console.ReadLine();
         }
@@ -98,7 +98,7 @@ namespace TgBotLab
 
                 if (message.Text.ToLower().Contains("official site"))
                 {
-                    await botClient.SendTextMessageAsync(message.Chat.Id, "https://lpnu.ua/");
+                    await botClient.SendTextMessageAsync(message.Chat.Id, "https://amath.lp.edu.ua/");
                 }
                 if (message.Text.ToLower().Contains("back"))
                 {
